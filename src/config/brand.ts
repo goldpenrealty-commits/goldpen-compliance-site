@@ -22,8 +22,8 @@ export const brand = {
   // NOT YET PROVIDED — do not invent. Must match the approved Twilio
   // Business Profile exactly before production sign-off.
   legalBusinessName: "",
-  businessAddress: "",
-  supportEmail: "",
+  businessAddress: "9835 SW 72 St Suite 211, Miami, FL 33173",
+  supportEmail: "support@goldpengroup.com",
   supportPhone: "",
   /** Only set this if privacy inquiries go to a different address than supportEmail. */
   privacyEmail: "",
