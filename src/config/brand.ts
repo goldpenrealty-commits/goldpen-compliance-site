@@ -19,9 +19,8 @@ export const brand = {
   lastUpdatedDisplay: "August 24, 2026",
   lastUpdatedISO: "2026-08-24",
 
-  // NOT YET PROVIDED — do not invent. Must match the approved Twilio
-  // Business Profile exactly before production sign-off.
-  legalBusinessName: "",
+  // Confirmed against the approved Twilio Business Profile.
+  legalBusinessName: "GoldPen Realty Group LLC",
   businessAddress: "9835 SW 72 St Suite 211, Miami, FL 33173",
   supportEmail: "support@goldpengroup.com",
   supportPhone: "+1 (786) 460-4334",

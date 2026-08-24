@@ -25,6 +25,10 @@ export default function PrivacyPolicyPage() {
           business transactions, including communications sent through the {brand.programName}{" "}
           messaging program.
         </p>
+        <p>
+          {brand.publicBrandName} is a trade name and public-facing brand of{" "}
+          {brand.legalBusinessName}.
+        </p>
       </section>
 
       <section>
