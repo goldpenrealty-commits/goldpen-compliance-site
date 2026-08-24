@@ -226,7 +226,25 @@ section + section {
 }
 
 .disclosure-box p {
-  margin: 0;
+  margin: 0 0 0.75rem;
+}
+
+.disclosure-box p:last-of-type {
+  margin-bottom: 0;
+}
+
+.resource-links {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.resource-links li {
+  margin-bottom: 0.5rem;
+}
+
+.resource-links a {
+  word-break: break-word;
 }
 
 /* Pending field marker */

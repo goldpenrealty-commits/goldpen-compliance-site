@@ -12,13 +12,13 @@ Customer Care
 ## Campaign Description
 
 > GOLDPEN GROUP uses this campaign for one-to-one customer care and business communications
-> with brokers, sellers, representatives, vendors, and other authorized contacts involved in
-> active acquisition inquiries and transactions. Messages may include responses to inquiries,
-> requests for aircraft or asset information, maintenance and due-diligence documentation,
-> pricing discussions, negotiation updates, scheduling, and transaction coordination. Recipients
-> have provided their phone number or otherwise consented to receive SMS communications in
-> connection with an active business inquiry or relationship. Messages are conversational and
-> transactional in nature and are not used for unsolicited bulk marketing.
+> with brokers, sellers, representatives, vendors, business advisors, and other authorized
+> contacts involved in active acquisition inquiries and transactions. Messages may include
+> responses to inquiries, requests for aircraft or other asset information, maintenance and
+> due-diligence documentation, pricing discussions, negotiation updates, scheduling, and
+> transaction coordination. Recipients have affirmatively consented to receive SMS
+> communications in connection with an active business inquiry or transaction. Messages are
+> conversational and transactional in nature and are not used for unsolicited bulk marketing.
 
 ## Opt-In Methods
 
@@ -32,17 +32,21 @@ submissions are actually being persisted.
 
 ## Recipient Consent / Message Flow
 
-> Recipients are brokers, sellers, representatives, vendors, and other business contacts
-> involved in active acquisition inquiries or transactions with GOLDPEN GROUP. Consent is
-> obtained either by the recipient initiating an SMS conversation with GOLDPEN Acquisition
-> Intelligence at (786) 460-4334, by replying affirmatively to a request to continue an active
-> business conversation by SMS, or verbally during an active business conversation where the
-> recipient provides or confirms their mobile number and agrees to receive transaction-related
-> text messages. Messages may include asset information, due diligence, document requests,
-> pricing discussions, negotiation updates, scheduling, and transaction coordination. Message
-> frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for
-> assistance. Privacy Policy: https://compliance.goldpengroup.com/privacy-policy. SMS Terms:
-> https://compliance.goldpengroup.com/sms-terms.
+> Recipients are brokers, sellers, representatives, vendors, business advisors, and other
+> authorized contacts involved in active acquisition inquiries or transactions with GOLDPEN
+> GROUP. Consent is obtained when the recipient initiates an SMS conversation with GOLDPEN
+> Acquisition Intelligence at (786) 460-4334, affirmatively agrees by SMS to continue an
+> existing business conversation through text messaging, or verbally provides or confirms
+> their mobile number and affirmatively agrees to receive transaction-related SMS
+> communications. During verbal consent, recipients are informed that message frequency
+> varies, message and data rates may apply, they may reply STOP to opt out or HELP for
+> assistance, and consent is not a condition of purchase or obtaining services. Public
+> availability of a telephone number does not constitute consent. Messages may include asset
+> information, due diligence, maintenance or document requests, pricing discussions,
+> negotiation updates, scheduling, and transaction coordination. Privacy Policy:
+> https://compliance.goldpengroup.com/privacy-policy. SMS Terms:
+> https://compliance.goldpengroup.com/sms-terms. Consent details:
+> https://compliance.goldpengroup.com/sms-consent.
 
 ## Sample Messages
 

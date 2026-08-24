@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { PendingField } from "@/components/PendingField";
@@ -98,10 +99,18 @@ export default function PrivacyPolicyPage() {
           <li>Transaction coordination</li>
           <li>Customer care</li>
         </ul>
-        <p>Message frequency varies based on the active inquiry or transaction.</p>
-        <p>Message and data rates may apply.</p>
-        <p>Reply STOP to opt out.</p>
-        <p>Reply HELP for assistance.</p>
+        <p>
+          <strong>Message frequency varies based on the active inquiry or transaction.</strong>
+        </p>
+        <p>
+          <strong>Message and data rates may apply.</strong>
+        </p>
+        <p>
+          <strong>Reply STOP to opt out.</strong>
+        </p>
+        <p>
+          <strong>Reply HELP for assistance.</strong>
+        </p>
       </section>
 
       <section>
@@ -167,26 +176,48 @@ export default function PrivacyPolicyPage() {
       </section>
 
       <section>
+        <h2>SMS Program Resources</h2>
+        <p>
+          For additional information regarding the {brand.programName} messaging program, please
+          review:
+        </p>
+        <ul className="resource-links">
+          <li>
+            <Link href="/sms-terms">SMS Terms &amp; Conditions — {brand.productionUrl}/sms-terms</Link>
+          </li>
+          <li>
+            <Link href="/sms-consent">SMS Consent Information — {brand.productionUrl}/sms-consent</Link>
+          </li>
+        </ul>
+      </section>
+
+      <section>
         <h2>Contact</h2>
         <p>
-          {hasValue(brand.legalBusinessName) ? brand.legalBusinessName : (
+          Legal Business Name:{" "}
+          {hasValue(brand.legalBusinessName) ? (
+            brand.legalBusinessName
+          ) : (
             <PendingField value={brand.legalBusinessName} label="legal business name" />
           )}
           <br />
-          <PendingField value={brand.businessAddress} label="business address" />
-        </p>
-        <p>
-          Email:{" "}
+          Business Address: <PendingField value={brand.businessAddress} label="business address" />
+          <br />
+          Privacy Email:{" "}
           {hasValue(brand.privacyEmail || brand.supportEmail) ? (
             <a href={`mailto:${brand.privacyEmail || brand.supportEmail}`}>
               {brand.privacyEmail || brand.supportEmail}
             </a>
           ) : (
-            <PendingField value={brand.privacyEmail} label="privacy contact email" />
+            <PendingField value={brand.privacyEmail} label="privacy email" />
           )}
+          <br />
+          Support Phone: <PendingField value={brand.supportPhone} label="support phone" />
         </p>
         <p>
-          Phone: <PendingField value={brand.supportPhone} label="support phone" />
+          For assistance with the {brand.programName} SMS program, reply HELP to{" "}
+          <a href={`tel:${brand.smsNumberTel}`}>{brand.smsNumberDisplay}</a> or contact{" "}
+          {brand.publicBrandName} using the information above.
         </p>
       </section>
     </>

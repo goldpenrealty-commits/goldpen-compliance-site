@@ -41,7 +41,11 @@ export default function SmsTermsPage() {
           <li>Transaction coordination</li>
           <li>Customer support</li>
         </ul>
-        <p>This is not a promotional marketing program.</p>
+        <p>
+          This program is limited to customer-care, transactional, and business communications
+          related to active inquiries and transactions and is not used for unsolicited
+          promotional marketing.
+        </p>
       </section>
 
       <section>
@@ -56,34 +60,45 @@ export default function SmsTermsPage() {
 
       <section>
         <h2>Message Frequency</h2>
-        <p>Message frequency varies depending on the active inquiry or transaction.</p>
-      </section>
-
-      <section>
-        <h2>Message and Data Rates</h2>
-        <p>Message and data rates may apply.</p>
-      </section>
-
-      <section>
-        <h2>Opt-Out</h2>
-        <p>Reply STOP to opt out at any time.</p>
         <p>
-          After you reply STOP, you should no longer receive messages from this program, except
-          for any legally permitted confirmation of your opt-out.
+          <strong>Message frequency varies depending on the active inquiry or transaction.</strong>
         </p>
       </section>
 
       <section>
-        <h2>Help</h2>
-        <p>Reply HELP for assistance.</p>
+        <h2>Message and Data Rates</h2>
         <p>
-          You can also reach {brand.publicBrandName} directly at{" "}
+          <strong>Message and data rates may apply.</strong>
+        </p>
+      </section>
+
+      <section>
+        <h2>Opt-Out</h2>
+        <p>
+          <strong>Reply STOP to opt out at any time.</strong>
+        </p>
+        <p>
+          After you reply STOP, you will no longer receive messages from this program, except for
+          a one-time confirmation of your opt-out where permitted.
+        </p>
+        <p>You may reply START to opt back in.</p>
+      </section>
+
+      <section>
+        <h2>Help</h2>
+        <p>
+          <strong>Reply HELP for assistance.</strong>
+        </p>
+        <p>You may also contact {brand.publicBrandName} at:</p>
+        <p>
+          Email:{" "}
           {hasValue(brand.supportEmail) ? (
             <a href={`mailto:${brand.supportEmail}`}>{brand.supportEmail}</a>
           ) : (
             <PendingField value={brand.supportEmail} label="support email" />
-          )}{" "}
-          or <PendingField value={brand.supportPhone} label="support phone" />.
+          )}
+          <br />
+          Phone: <PendingField value={brand.supportPhone} label="support phone" />
         </p>
       </section>
 
@@ -111,7 +126,17 @@ export default function SmsTermsPage() {
         <h2>Privacy</h2>
         <p>
           For information about how {brand.publicBrandName} collects, uses, and protects your
-          information, see our <Link href="/privacy-policy">Privacy Policy</Link>.
+          information, see our{" "}
+          <Link href="/privacy-policy">Privacy Policy — {brand.productionUrl}/privacy-policy</Link>.
+        </p>
+      </section>
+
+      <section>
+        <h2>SMS Consent</h2>
+        <p>
+          For information about how recipients provide consent to receive messages from{" "}
+          {brand.programName}, see{" "}
+          <Link href="/sms-consent">{brand.productionUrl}/sms-consent</Link>.
         </p>
       </section>
 
