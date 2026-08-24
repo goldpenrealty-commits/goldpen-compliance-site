@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { brand } from "@/config/brand";
 
 export function ConsentDisclosure() {
@@ -27,10 +26,14 @@ export function ConsentDisclosure() {
       <p>See our:</p>
       <ul className="resource-links">
         <li>
-          <Link href="/privacy-policy">Privacy Policy — {brand.productionUrl}/privacy-policy</Link>
+          <a href={`${brand.productionUrl}/privacy-policy`}>
+            Privacy Policy — {brand.productionUrl}/privacy-policy
+          </a>
         </li>
         <li>
-          <Link href="/sms-terms">SMS Terms &amp; Conditions — {brand.productionUrl}/sms-terms</Link>
+          <a href={`${brand.productionUrl}/sms-terms`}>
+            SMS Terms &amp; Conditions — {brand.productionUrl}/sms-terms
+          </a>
         </li>
       </ul>
     </aside>

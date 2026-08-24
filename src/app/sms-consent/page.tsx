@@ -56,6 +56,10 @@ export default function SmsConsentPage() {
           <a href={`tel:${brand.smsNumberTel}`}>{brand.smsNumberDisplay}</a>.
         </p>
         <p>
+          By initiating the SMS conversation, the recipient is requesting and consenting to
+          receive responses related to that active inquiry or transaction.
+        </p>
+        <p>
           Alternatively, during an existing business inquiry, {brand.publicBrandName} may ask
           whether the recipient agrees to continue the conversation through SMS.
         </p>
