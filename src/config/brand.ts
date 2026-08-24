@@ -24,7 +24,7 @@ export const brand = {
   legalBusinessName: "",
   businessAddress: "9835 SW 72 St Suite 211, Miami, FL 33173",
   supportEmail: "support@goldpengroup.com",
-  supportPhone: "",
+  supportPhone: "+1 (786) 460-4334",
   /** Only set this if privacy inquiries go to a different address than supportEmail. */
   privacyEmail: "",
 } as const;
