@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { PendingField } from "@/components/PendingField";
@@ -127,7 +126,10 @@ export default function SmsTermsPage() {
         <p>
           For information about how {brand.publicBrandName} collects, uses, and protects your
           information, see our{" "}
-          <Link href="/privacy-policy">Privacy Policy — {brand.productionUrl}/privacy-policy</Link>.
+          <a href={`${brand.productionUrl}/privacy-policy`}>
+            Privacy Policy — {brand.productionUrl}/privacy-policy
+          </a>
+          .
         </p>
       </section>
 
@@ -136,7 +138,7 @@ export default function SmsTermsPage() {
         <p>
           For information about how recipients provide consent to receive messages from{" "}
           {brand.programName}, see{" "}
-          <Link href="/sms-consent">{brand.productionUrl}/sms-consent</Link>.
+          <a href={`${brand.productionUrl}/sms-consent`}>{brand.productionUrl}/sms-consent</a>.
         </p>
       </section>
 

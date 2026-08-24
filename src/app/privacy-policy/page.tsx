@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { PendingField } from "@/components/PendingField";
@@ -187,10 +186,14 @@ export default function PrivacyPolicyPage() {
         </p>
         <ul className="resource-links">
           <li>
-            <Link href="/sms-terms">SMS Terms &amp; Conditions — {brand.productionUrl}/sms-terms</Link>
+            <a href={`${brand.productionUrl}/sms-terms`}>
+              SMS Terms &amp; Conditions — {brand.productionUrl}/sms-terms
+            </a>
           </li>
           <li>
-            <Link href="/sms-consent">SMS Consent Information — {brand.productionUrl}/sms-consent</Link>
+            <a href={`${brand.productionUrl}/sms-consent`}>
+              SMS Consent Information — {brand.productionUrl}/sms-consent
+            </a>
           </li>
         </ul>
       </section>

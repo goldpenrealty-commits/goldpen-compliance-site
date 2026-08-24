@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { brand } from "@/config/brand";
@@ -26,18 +25,18 @@ export default function HomePage() {
       </p>
 
       <div className="link-cards">
-        <Link className="link-card" href="/privacy-policy">
+        <a className="link-card" href={`${brand.productionUrl}/privacy-policy`}>
           <h2>Privacy Policy</h2>
           <p>How {brand.publicBrandName} collects, uses, and protects personal and mobile information.</p>
-        </Link>
-        <Link className="link-card" href="/sms-terms">
+        </a>
+        <a className="link-card" href={`${brand.productionUrl}/sms-terms`}>
           <h2>SMS Terms &amp; Conditions</h2>
           <p>Program description, message frequency, opt-out, and messaging terms.</p>
-        </Link>
-        <Link className="link-card" href="/sms-consent">
+        </a>
+        <a className="link-card" href={`${brand.productionUrl}/sms-consent`}>
           <h2>SMS Consent</h2>
           <p>Who receives these messages and how consent is obtained.</p>
-        </Link>
+        </a>
       </div>
 
       <div className="program-panel">

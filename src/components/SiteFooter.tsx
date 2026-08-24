@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { brand, hasValue } from "@/config/brand";
 import { PendingField } from "@/components/PendingField";
 
@@ -30,16 +29,16 @@ export function SiteFooter() {
         <nav aria-label="Footer" className="footer-nav">
           <ul className="nav-links">
             <li>
-              <Link href="/">Home</Link>
+              <a href={`${brand.productionUrl}/`}>Home</a>
             </li>
             <li>
-              <Link href="/privacy-policy">Privacy Policy</Link>
+              <a href={`${brand.productionUrl}/privacy-policy`}>Privacy Policy</a>
             </li>
             <li>
-              <Link href="/sms-terms">SMS Terms</Link>
+              <a href={`${brand.productionUrl}/sms-terms`}>SMS Terms</a>
             </li>
             <li>
-              <Link href="/sms-consent">SMS Consent</Link>
+              <a href={`${brand.productionUrl}/sms-consent`}>SMS Consent</a>
             </li>
           </ul>
         </nav>

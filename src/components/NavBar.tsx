@@ -1,25 +1,24 @@
-import Link from "next/link";
 import { brand } from "@/config/brand";
 
 const links = [
-  { href: "/", label: "Home" },
-  { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/sms-terms", label: "SMS Terms" },
-  { href: "/sms-consent", label: "SMS Consent" },
+  { path: "", label: "Home" },
+  { path: "/privacy-policy", label: "Privacy Policy" },
+  { path: "/sms-terms", label: "SMS Terms" },
+  { path: "/sms-consent", label: "SMS Consent" },
 ];
 
 export function NavBar() {
   return (
     <header className="site-header">
       <div className="container nav-inner">
-        <Link href="/" className="brand-mark">
+        <a href={`${brand.productionUrl}/`} className="brand-mark">
           {brand.publicBrandName}
-        </Link>
+        </a>
         <nav aria-label="Primary">
           <ul className="nav-links">
             {links.map((link) => (
-              <li key={link.href}>
-                <Link href={link.href}>{link.label}</Link>
+              <li key={link.path}>
+                <a href={`${brand.productionUrl}${link.path}`}>{link.label}</a>
               </li>
             ))}
           </ul>
