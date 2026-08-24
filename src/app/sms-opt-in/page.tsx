@@ -54,6 +54,11 @@ export default function SmsOptInPage() {
               SMS Terms — {brand.productionUrl}/sms-terms
             </a>
           </li>
+          <li>
+            <a href={`${brand.productionUrl}/sms-consent`}>
+              SMS Consent — {brand.productionUrl}/sms-consent
+            </a>
+          </li>
         </ul>
       </aside>
 
@@ -97,19 +102,6 @@ export default function SmsOptInPage() {
           transaction-related SMS regarding active acquisition inquiries. Message frequency
           varies. Msg &amp; data rates may apply. Reply STOP to opt out or HELP for
           assistance.&rdquo;
-        </p>
-      </section>
-
-      <section>
-        <h2>{brand.publicBrandName}</h2>
-        <p>
-          Public-facing brand used by {brand.legalBusinessName}
-          <br />
-          {brand.businessAddress}
-          <br />
-          Support: <a href={`mailto:${brand.supportEmail}`}>{brand.supportEmail}</a>
-          <br />
-          <a href={`tel:${brand.smsNumberTel}`}>{brand.smsNumberDisplay}</a>
         </p>
       </section>
     </>
