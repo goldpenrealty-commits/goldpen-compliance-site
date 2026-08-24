@@ -30,22 +30,49 @@ export default function SmsConsentPage() {
       <section>
         <h2>Via Text</h2>
         <p>
-          A recipient may initiate an SMS conversation with{" "}
-          <a href={`tel:${brand.smsNumberTel}`}>{brand.smsNumberDisplay}</a>, or affirmatively
-          agree by SMS to continue an existing active business conversation through text
-          messaging.
+          A recipient may opt in by texting <strong>START</strong> to{" "}
+          <strong>
+            <a href={`tel:${brand.smsNumberTel}`}>{brand.smsNumberDisplay}</a>
+          </strong>
+          .
         </p>
         <p>
-          When {brand.publicBrandName} requests permission to continue an existing business
-          conversation by SMS, the recipient must provide an affirmative response such as
-          &ldquo;Yes,&rdquo; &ldquo;I agree,&rdquo; or another clear confirmation before ongoing
-          business-related SMS communications are sent.
+          {brand.programName} responds with the program description, message frequency
+          disclosure, message and data rates disclosure, STOP and HELP instructions, Privacy
+          Policy and SMS Terms links, and asks the recipient to reply YES to confirm enrollment.
         </p>
+        <p>The recipient must reply YES before enrollment is completed.</p>
+        <p>After YES is received, {brand.programName} sends a confirmation SMS.</p>
         <p>
-          A telephone number appearing on a public website, aircraft listing, business directory,
-          advertisement, marketplace, professional profile, or other publicly available source
-          does not by itself constitute consent to receive SMS messages from{" "}
-          {brand.publicBrandName}.
+          Public availability of a telephone number on a website, aircraft listing, business
+          directory, marketplace, advertisement, professional profile, or other public source does
+          not constitute consent.
+        </p>
+        <ul className="resource-links">
+          <li>
+            <a href={`${brand.productionUrl}/sms-opt-in`}>Via Text SMS Opt-In</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Example First Response</h2>
+        <p className="sms-sample">
+          &ldquo;{brand.programName}: You requested customer-care and transaction-related SMS
+          regarding active acquisition inquiries. Message frequency varies. Msg &amp; data rates
+          may apply. Reply STOP to opt out or HELP for assistance. Terms:{" "}
+          {brand.productionUrl}/sms-terms Privacy: {brand.productionUrl}/privacy-policy. Reply YES
+          to confirm enrollment.&rdquo;
+        </p>
+      </section>
+
+      <section>
+        <h2>Example Confirmation Message</h2>
+        <p className="sms-sample">
+          &ldquo;{brand.programName}: Confirmed. You are enrolled to receive customer-care and
+          transaction-related SMS regarding active acquisition inquiries. Message frequency
+          varies. Msg &amp; data rates may apply. Reply STOP to opt out or HELP for
+          assistance.&rdquo;
         </p>
       </section>
 
@@ -90,12 +117,26 @@ export default function SmsConsentPage() {
       <section>
         <h2>Verbal Consent Script</h2>
         <p>During an active business conversation, a {brand.publicBrandName} representative may ask:</p>
-        <p>
+        <p className="sms-sample">
           &ldquo;Would you like us to continue communicating with you by text message regarding
-          this active acquisition inquiry or transaction? Message frequency varies. Message and
-          data rates may apply. You may reply STOP at any time to opt out or HELP for assistance.
-          Consent is not a condition of purchase or obtaining services.&rdquo;
+          this active acquisition inquiry or transaction through {brand.programName}? Message
+          frequency varies based on the active inquiry or transaction. Message and data rates may
+          apply. Reply STOP at any time to opt out or HELP for assistance. Consent is not a
+          condition of purchase or obtaining services. Our SMS Terms are available at{" "}
+          {brand.productionUrl}/sms-terms and our Privacy Policy is available at{" "}
+          {brand.productionUrl}/privacy-policy. Would you like to receive these SMS messages?
+          Please answer yes or no.&rdquo;
         </p>
+        <p>
+          If the recipient answers affirmatively, the {brand.publicBrandName} representative
+          confirms:
+        </p>
+        <p className="sms-sample">
+          &ldquo;Thank you. You have agreed to receive {brand.programName} customer-care and
+          transaction-related SMS messages. You will receive a confirmation message
+          shortly.&rdquo;
+        </p>
+        <p>Then the system sends the same confirmation SMS used for Via Text.</p>
         <p>
           The recipient must affirmatively agree before {brand.publicBrandName} initiates ongoing
           business-related SMS communications.
