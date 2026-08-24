@@ -69,34 +69,6 @@ export default function SmsConsentPage() {
       </section>
 
       <section>
-        <h2>Text Message Consent Example</h2>
-        <p>
-          A recipient may initiate a conversation by sending an SMS directly to{" "}
-          <a href={`tel:${brand.smsNumberTel}`}>{brand.smsNumberDisplay}</a>.
-        </p>
-        <p>
-          By initiating the SMS conversation, the recipient is requesting and consenting to
-          receive responses related to that active inquiry or transaction.
-        </p>
-        <p>
-          Alternatively, during an existing business inquiry, {brand.publicBrandName} may ask
-          whether the recipient agrees to continue the conversation through SMS.
-        </p>
-        <p>The recipient must affirmatively agree before ongoing SMS communications are initiated.</p>
-        <p>Acceptable affirmative confirmations may include responses such as:</p>
-        <ul>
-          <li>&ldquo;Yes&rdquo;</li>
-          <li>&ldquo;I agree&rdquo;</li>
-          <li>&ldquo;You can text me&rdquo;</li>
-          <li>Another clear affirmative statement expressing consent to continue by SMS</li>
-        </ul>
-        <p>
-          Silence, failure to respond, or the mere availability of a telephone number is not
-          treated as SMS consent.
-        </p>
-      </section>
-
-      <section>
         <h2>Verbal Consent</h2>
         <p>
           During an active business conversation, a recipient may provide or confirm their mobile
