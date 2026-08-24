@@ -37,6 +37,12 @@ export default function HomePage() {
           <h2>SMS Consent</h2>
           <p>Who receives these messages and how consent is obtained.</p>
         </a>
+        <a className="link-card" href={`${brand.productionUrl}/sms-opt-in`}>
+          <h2>SMS Opt-In</h2>
+          <p>
+            View {brand.programName} SMS keyword opt-in instructions and consent flow.
+          </p>
+        </a>
       </div>
 
       <div className="program-panel">

@@ -40,6 +40,9 @@ export function SiteFooter() {
             <li>
               <a href={`${brand.productionUrl}/sms-consent`}>SMS Consent</a>
             </li>
+            <li>
+              <a href={`${brand.productionUrl}/sms-opt-in`}>SMS Opt-In</a>
+            </li>
           </ul>
         </nav>
 

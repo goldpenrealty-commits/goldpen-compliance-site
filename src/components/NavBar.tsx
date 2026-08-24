@@ -5,6 +5,7 @@ const links = [
   { path: "/privacy-policy", label: "Privacy Policy" },
   { path: "/sms-terms", label: "SMS Terms" },
   { path: "/sms-consent", label: "SMS Consent" },
+  { path: "/sms-opt-in", label: "SMS Opt-In" },
 ];
 
 export function NavBar() {
