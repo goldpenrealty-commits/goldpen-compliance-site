@@ -37,33 +37,25 @@ export default function SmsConsentPage() {
           .
         </p>
         <p>
-          {brand.programName} responds with the program description, message frequency
-          disclosure, message and data rates disclosure, STOP and HELP instructions, Privacy
-          Policy and SMS Terms links, and asks the recipient to reply YES to confirm enrollment.
+          Sending START constitutes an affirmative request to enroll in {brand.programName}{" "}
+          customer-care and transaction-related SMS communications regarding active acquisition
+          inquiries and transactions.
         </p>
-        <p>The recipient must reply YES before enrollment is completed.</p>
-        <p>After YES is received, {brand.programName} sends a confirmation SMS.</p>
+        <p>
+          After START is received, {brand.programName} sends an enrollment confirmation
+          identifying the program and providing the applicable SMS disclosures, including message
+          frequency, message and data rates, and STOP/HELP instructions.
+        </p>
         <p>
           Public availability of a telephone number on a website, aircraft listing, business
-          directory, marketplace, advertisement, professional profile, or other public source does
-          not constitute consent.
+          directory, marketplace, advertisement, professional profile, or other publicly available
+          source does not constitute consent.
         </p>
         <ul className="resource-links">
           <li>
             <a href={`${brand.productionUrl}/sms-opt-in`}>Via Text SMS Opt-In</a>
           </li>
         </ul>
-      </section>
-
-      <section>
-        <h2>Example First Response</h2>
-        <p className="sms-sample">
-          &ldquo;{brand.programName}: You requested customer-care and transaction-related SMS
-          regarding active acquisition inquiries. Message frequency varies. Msg &amp; data rates
-          may apply. Reply STOP to opt out or HELP for assistance. Terms:{" "}
-          {brand.productionUrl}/sms-terms Privacy: {brand.productionUrl}/privacy-policy. Reply YES
-          to confirm enrollment.&rdquo;
-        </p>
       </section>
 
       <section>
