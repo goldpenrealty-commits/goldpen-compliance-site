@@ -247,6 +247,41 @@ section + section {
   word-break: break-word;
 }
 
+/* Opt-in CTA callout */
+
+.optin-cta {
+  border: 2px solid var(--color-accent);
+  border-radius: 4px;
+  padding: 1.5rem 1.75rem;
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+  background: var(--color-surface);
+}
+
+.optin-cta p {
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: var(--font-serif);
+  color: var(--color-text);
+}
+
+.optin-cta a {
+  color: var(--color-accent-dark);
+}
+
+/* Sample SMS message block */
+
+.sms-sample {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-text-muted);
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
 /* Pending field marker */
 
 .pending-field {
