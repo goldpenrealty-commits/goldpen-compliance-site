@@ -73,26 +73,15 @@ export default function SmsOptInPage() {
             .
           </li>
           <li>
-            {brand.programName} replies with program disclosures and asks the user to reply{" "}
-            <strong>YES</strong> to confirm enrollment.
+            {brand.programName} confirms enrollment and provides the program disclosures,
+            including message frequency, message and data rates, and STOP/HELP instructions.
           </li>
           <li>
-            User replies <strong>YES</strong>.
+            The recipient may reply <strong>STOP</strong> at any time to opt out or{" "}
+            <strong>HELP</strong> for assistance.
           </li>
-          <li>{brand.programName} sends a confirmation message.</li>
           <li>Public availability of a phone number alone does not constitute consent.</li>
         </ol>
-      </section>
-
-      <section>
-        <h2>Example First Response</h2>
-        <p className="sms-sample">
-          &ldquo;{brand.programName}: You requested customer-care and transaction-related SMS
-          regarding active acquisition inquiries. Message frequency varies. Msg &amp; data rates
-          may apply. Reply STOP to opt out or HELP for assistance. Terms:{" "}
-          {brand.productionUrl}/sms-terms Privacy: {brand.productionUrl}/privacy-policy. Reply YES
-          to confirm enrollment.&rdquo;
-        </p>
       </section>
 
       <section>
