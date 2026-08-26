@@ -86,6 +86,11 @@ export default function PrivacyPolicyPage() {
       <section>
         <h2>Messaging Program</h2>
         <p>
+          {brand.publicBrandName} operates multiple business phone lines and communication
+          programs. This policy applies to all {brand.publicBrandName} communications, including
+          but not limited to the messaging program described below.
+        </p>
+        <p>
           {brand.programName}
           <br />
           SMS: <a href={`tel:${brand.smsNumberTel}`}>{brand.smsNumberDisplay}</a>
